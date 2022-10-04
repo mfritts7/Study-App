@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Observable, of, BehaviorSubject, switchMap, interval, Subscription, map, share } from 'rxjs';
+import { timer } from 'rxjs';
+
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +10,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'StudyApp';
+ 
+
 }
+
+
