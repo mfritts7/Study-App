@@ -1,0 +1,30 @@
+.game-board{
+margin:auto;
+display: inline-block;
+border:1px solid #000000;
+}
+
+#col1{
+position: relative;
+left: 30%;
+}
+
+#col2{
+position: relative;
+right: 5%
+}
+
+.right-column{
+  position: top;
+  margin: auto
+}
+
+.container{
+  margin: auto;
+  position: center;
+}
+
+
+* {
+    font-family: 'Press Start 2P', cursive;
+  }

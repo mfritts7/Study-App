@@ -1,4 +1,24 @@
-#myCanvas{
-margin: 1in;
-position: center;
+
+.btn {
+    width: 400px; 
+    height: 450px;
+    background-image: url('../../assets/tetris_screenshot.png');
+    background-size:cover;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.btn a:hover{
+    background-color: aqua;
+    color: black
+}
+
+.brightness {
+    background-color: white;
+    display: inline-block;
+
+}
+.brightness .btn:hover {
+    opacity: .5;
+    background-color: blue;
 }

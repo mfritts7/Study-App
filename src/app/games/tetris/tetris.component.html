@@ -1,0 +1,18 @@
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-sm" id="col1">
+      <div>
+        <h1>TETRIS</h1>
+        <p>Score: {{ points }}</p>
+        <p>Lines: {{ lines }}</p>
+        <p>Level: {{ level }}</p>
+        <canvas #next class="next"></canvas>
+      </div>
+      <button (click)="play()" class="play-button">Play</button>
+    </div>
+    <div class="col-sm" id="col2">
+      <canvas #board class="game-board"></canvas>
+    </div>
+  </div>
+</div>
