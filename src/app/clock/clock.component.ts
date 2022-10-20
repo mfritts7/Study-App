@@ -117,7 +117,7 @@ export class ClockComponent implements OnInit {
     }
   }
   myStyle = {
-    width: '0%'
+    width: '100%'
   }
 
   setTime(i: number) {

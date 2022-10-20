@@ -1,9 +1,21 @@
-<div class="topnav" style="position: center;">
-  <a class="active" routerLink="">Home</a>
-  <a routerLink='/clock'>Clock App</a>
-  <a href="/games">Games</a>
-  <a href="/list">To Do List</a>
-</div>
-<router-outlet> </router-outlet>
+  <!-- <div class="col"> <a routerLink="">Home</a></div>
+  <div class="col"> <a routerLink='/clock'>Clock App</a>
+  </div>
+  <div class="col"> <a routerLink="/games">Games</a>
+  </div>
+  <div class="col"> <a routerLink="/list">To Do List</a>
+  </div> -->
+    <div class="brightness">
+      <div class="dropright">
+        <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+        <ul class="dropdown-menu">
+          <li> <a class="dropdown-item" routerLink="">Home</a></li>
+          <li> <a class="dropdown-item" routerLink='/clock'>Clock App</a></li>
+          <li> <a class="dropdown-item" routerLink="/games">Games</a></li>
+          <li><a class="dropdown-item" routerLink="/list">To Do List</a></li>
+        </ul>
+      </div>
+    </div>
+<br>
 
-<footer class = "footer-dark"> </footer>
+<router-outlet> </router-outlet>
