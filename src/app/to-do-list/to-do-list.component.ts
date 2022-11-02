@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { List } from './List';
+
 @Component({
   selector: 'app-to-do-list',
   templateUrl: './to-do-list.component.html',
@@ -24,6 +25,9 @@ newNote:List
   addNote(){
   console.log("yolo")
   this.notes.list.push("Note"+ (this.notes.list.length+1))
+  }
+  addNewNote(msg:string){
+    this.notes.list.push(msg)
   }
   
   removeNote(index : number){

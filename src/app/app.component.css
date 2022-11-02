@@ -49,4 +49,8 @@
   opacity: .5;
   background-color: rgb(0, 0, 1);
 }
+html,body {
+  margin:0;
+  padding:0;
+}
 

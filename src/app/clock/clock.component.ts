@@ -23,6 +23,7 @@ export class ClockComponent implements OnInit {
   availableTimes = [60, 300, 600, 900, 1200, 1800, 2400]
   booleanStart: boolean = false;
   musicPlayed: boolean = false;
+  min:string = "min";
 
   today = new Date();
   timeString: string = ''
@@ -123,5 +124,9 @@ export class ClockComponent implements OnInit {
   setTime(i: number) {
     this.timeLeft = i;
     this.initalTime = i;
+  }
+
+  test(){
+    console.log("You suck!")
   }
 }

@@ -7,6 +7,7 @@ import { TetrisComponent } from './games/tetris/tetris.component';
 import { GamesComponent } from './games/games.component';
 import { ToDoListComponent } from './to-do-list/to-do-list.component';
 import { HomeComponent } from './home/home.component';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
     ],
   providers: [],
   bootstrap: [AppComponent]

@@ -4,6 +4,10 @@ display: inline-block;
 border:1px solid #000000;
 }
 
+*{
+  color: white;
+}
+
 #col1{
 position: relative;
 left: 30%;
