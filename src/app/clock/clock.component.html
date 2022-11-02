@@ -1,10 +1,27 @@
-
 <br>
-<div *ngFor="let time of availableTimes" style="display: inline-flex;">
-  <div class="btn" (click)="setTime(time)">
-    {{time/60}} min
+
+<div style = "position: relative;">
+<div id="Times">
+  <div *ngFor="let time of availableTimes" style="display: inline-flex;border: black;border-style:calc();">
+    <div class="btn" (click)="setTime(time)">
+      {{time/60}} min
+    </div>
   </div>
 </div>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text">Set Time</label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01">
+    <option *ngFor="let time of availableTimes">
+      <div class="btn" (click)="setTime(time)">
+        {{time/60}}min
+      </div>
+    </option>
+  </select>
+</div>
+
 <div class="btn" id="startBtn" (click)="startClock(true)"> Start </div>
 <div class="btn" id="startBtn" (click)="startClock(false)"> Stop </div>
 
@@ -37,6 +54,7 @@
 <div class="btn" (click)="playAudio()"> Start Music Test</div>
 <div class="btn" (click)="stopAudio()"> Stop Audio</div>
 
+</div>
 <router-outlet> </router-outlet>
 
 <!-- <div class="footer-dark">

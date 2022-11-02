@@ -4,6 +4,10 @@
     width: 80%;
    }
    
+   #Times{
+   width: 50%;
+   }
+   
    .progress-bar {
    background-color: rgb(237, 75, 66)
    }

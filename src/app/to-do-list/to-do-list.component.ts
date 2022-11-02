@@ -9,6 +9,7 @@ export class ToDoListComponent implements OnInit {
 
 today = new Date().toLocaleDateString()
 notes:List = {"date":this.today,"list":["note1","note2","note3"]}
+newNote:List
   constructor() { }
 
   ngOnInit(): void {

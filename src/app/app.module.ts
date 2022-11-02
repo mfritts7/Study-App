@@ -6,13 +6,15 @@ import { ClockComponent } from './clock/clock.component';
 import { TetrisComponent } from './games/tetris/tetris.component';
 import { GamesComponent } from './games/games.component';
 import { ToDoListComponent } from './to-do-list/to-do-list.component';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
     ClockComponent,
     TetrisComponent,
     GamesComponent,
-    ToDoListComponent
+    ToDoListComponent,
+    HomeComponent
     
   ],
   imports: [
