@@ -6,4 +6,6 @@ text-align: center;
 form-control{
 width:5cm;
 height: 2cm;
+opacity: 0;
 }
+
