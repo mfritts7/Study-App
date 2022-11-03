@@ -16,6 +16,10 @@ export class AppComponent {
 //  this.router.navigate(['home']);
  } 
 
+ myStyle = {
+  height: '200%'
+}
+
 }
 
 

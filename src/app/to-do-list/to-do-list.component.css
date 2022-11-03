@@ -1,15 +1,29 @@
 
-.table{
-text-align: center;
-}
-
-form-control{
-width:5cm;
-height: 2cm;
-opacity: 0;
-}
-
 *{
     color: white;
 }
 
+.row{
+    position: absolute;
+    width: 50%;
+    left: 33%;
+}
+
+.table{
+    background-color: white;
+    text-align: center;
+    width: 80%;
+    margin: 5cm;
+    margin-top: 1cm;
+}
+td,th{
+    color:black;
+
+}
+#button{
+    background-color: rgb(85,0,85);
+}
+
+.btn{
+    background-color: rgb(85,0,85);
+}
