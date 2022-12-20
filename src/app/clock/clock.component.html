@@ -1,43 +1,49 @@
-<br>
-<br>
-<br>
-<br>
+    <br>
+    <br>
 
 
-<div class="row" id="Atimes">
-  <div class="col-sm">
-    <div *ngFor="let time of availableTimes">
-      <div class="btn" style="font-weight: bold;font-size: 100%;overflow: hidden;" (click)="setTime(time)">
-        {{time/60}} min
+    <div class="row" id="Atimes">
+      <div class="col-sm">
+        <div class = "btn" style="font-weight: bold;font-size: 100%;overflow: hidden;" (click)="stopAudio()"> Stop Audio</div>
+
+        <div *ngFor="let time of availableTimes">
+          <div class="btn" style="font-weight: bold;font-size: 100%;overflow: hidden;" (click)="setTime(time)">
+            {{time/60}} min
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
-<div id="clock">{{minutesLeft}}mins : {{timeLeft%60}}s</div>
-<div class="brightness">
-  <div class="row">
-    <div class="btn" id="startBtn" (click)="startClock(true)"> Start </div>
-    <div class="btn" id="startBtn" (click)="startClock(false)"> Stop </div>
-  </div>
-</div>
-<br>
-<div class="progress">
-  <!-- <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="12" [ngStyle]="{width: '30%'}" aria-valuemin="0" aria-valuemax="100"></div> -->
-  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100"
-    [ngStyle]="myStyle" aria-valuemin="0" aria-valuemax="100"></div>
+    <div id="clock">{{minutesLeft}}mins : {{timeLeft%60}}s</div>
+    <div class="brightness">
+      <div class="row">
+        <div class="btn" id="startBtn" (click)="startClock(true)"> Start </div>
+        <div class="btn" id="startBtn" (click)="startClock(false)"> Stop </div>
+      </div>
+    </div>
+    <br>
 
-</div>
+      <div class="progress" >
+        <!-- <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="12" [ngStyle]="{width: '30%'}" aria-valuemin="0" aria-valuemax="100"></div> -->
+        <div class="progress-bar" role="progressbar" aria-valuenow="100"
+          [ngStyle]="myStyle" aria-valuemin="0" aria-valuemax="100">
+          </div>
 
-<!-- <div class="btn-group dropright">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id = "Atimes" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Available Times</button>
-  <ul class="dropdown-menu" style ="margin: 0;">
-    <li *ngFor="let time of availableTimes">
-      <div class="btn" style="color:black;text-align: center;" (click)="setTime(time)"> {{time/60}}min</div>
-    </li>
-  </ul>
-</div> -->
-<!-- <div class="btn" (click)="playAudio()"> Start Music Test</div>
-<div class="btn" (click)="stopAudio()"> Stop Audio</div> -->
+      </div>
+      
+  
+      <h3 style = "text-align: center;"> Progress Bar</h3>
 
-<router-outlet> </router-outlet>
+
+    <!-- <div class="btn-group dropright">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id = "Atimes" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Available Times</button>
+      <ul class="dropdown-menu" style ="margin: 0;">
+        <li *ngFor="let time of availableTimes">
+          <div class="btn" style="color:black;text-align: center;" (click)="setTime(time)"> {{time/60}}min</div>
+        </li>
+      </ul>
+    </div> -->
+    <!-- <div class="btn" (click)="playAudio()"> Start Music Test</div>
+    <div class="btn" (click)="stopAudio()"> Stop Audio</div> -->
+
+    <router-outlet> </router-outlet>
