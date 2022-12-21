@@ -20,12 +20,13 @@ right: 5%
 
 .right-column{
   position: top;
-  margin: auto
+  margin: auto;
 }
 
 .container{
   margin: auto;
-  position: center;
+  left: 100%;
+  transform: translate(-45%, 0);
 }
 
 

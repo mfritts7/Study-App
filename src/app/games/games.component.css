@@ -16,6 +16,8 @@
 .brightness {
     background-color: white;
     display: inline-block;
+    transform: translate(45%, 0);
+
 
 }
 .brightness .btn:hover {
